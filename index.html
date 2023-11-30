@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="Tour.js"></script>
+  <script src="CursorEvents.js"></script>
+</head>
+<body>
+  <a-scene cursor="rayOrigin: mouse">
+    
+    <a-sky id="panorama" radius="10" src="#place0"></a-sky>
+
+    
+    <a-entity camera look-controls position="0 1.6 0"></a-entity>
+
+    
+    <a-entity cursor="fuse: true; fuseTimeout: 1500;"></a-entity>
+
+    
+    <a-entity id="placesContainer"></a-entity>
+  </a-scene>
+</body>
+</html>

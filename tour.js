@@ -13,7 +13,7 @@ AFRAME.registerComponent('tour', {
       
       this.state = { selected: null };
   
-      
+     
       this.el.addEventListener('mouseenter', handleMouseEnterEvents);
       this.el.addEventListener('mouseleave', handleMouseLeaveEvents);
       this.el.addEventListener('click', handleMouseClickEvents);
